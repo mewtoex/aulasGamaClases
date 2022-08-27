@@ -23,8 +23,10 @@ do
                 Console.WriteLine("CPF invalido digite novamente");
                 pessoaf.mudaDocumento(Console.ReadLine());
             }
-            Console.WriteLine("Digite o endereco da empresa");
+            Console.WriteLine("Digite o endereco da " + pessoaf);
             pessoaf.endereco.lerEndereco(pessoaf.nome);
+            pessoaf.endereco.printEndereco();
+
             break;
 
         case ("juridica"):
@@ -42,7 +44,7 @@ do
             }
             Console.WriteLine("Digite o endereco da empresa");
             pessoaj.endereco.lerEndereco(pessoaj.nome);
-
+            pessoaj.endereco.printEndereco();
 
 
 
